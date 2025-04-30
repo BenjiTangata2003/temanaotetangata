@@ -26,6 +26,25 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .policy-buttons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .policy-buttons a {
+      background: #C8102E;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .policy-buttons a:hover {
+      border-color: #ffeb99;
+      box-shadow: 0 0 10px #ffeb99;
+    }
     main {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
@@ -57,31 +76,18 @@
 
   <main>
     <h1>Our Policies</h1>
-    <!-- ✳️ Policy Navigation Buttons (Link to Individual Pages) -->
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="housing.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Housing</a>
-  <a href="economy-tax.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Economy & Tax</a>
-  <a href="justice.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Justice</a>
-  <a href="education.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Education</a>
-  <a href="health.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Health</a>
-  <a href="environment.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Environment & Climate</a>
-  <a href="transport.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Transport</a>
-  <a href="infrastructure.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Infrastructure & Tech</a>
-  <a href="democracy.html" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Democracy & Governance</a>
-</div>
 
-<!-- ✳️ Policy Navigation Buttons -->
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="#housing-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Housing</a>
-  <a href="#economy-tax-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Economy & Tax</a>
-  <a href="#justice-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Justice</a>
-  <a href="#education-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Education</a>
-  <a href="#health-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Health</a>
-  <a href="#environment-climate-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Environment & Climate</a>
-  <a href="#transport-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Transport</a>
-  <a href="#infrastructure-technology-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Infrastructure & Tech</a>
-  <a href="#democracy-governance-policy" style="background: #C8102E; color: white; padding: 0.75rem 1.5rem; margin: 0.5rem; border-radius: 8px; text-decoration: none; display: inline-block;">Democracy & Governance</a>
-</div>
+    <div class="policy-buttons">
+      <a href="housing.html">Housing</a>
+      <a href="economy-tax.html">Economy & Tax</a>
+      <a href="justice.html">Justice</a>
+      <a href="education.html">Education</a>
+      <a href="health.html">Health</a>
+      <a href="environment.html">Environment & Climate</a>
+      <a href="transport.html">Transport</a>
+      <a href="infrastructure.html">Infrastructure & Tech</a>
+      <a href="democracy.html">Democracy & Governance</a>
+    </div>
 
     <ul>
       <li><strong>🏡 Housing for All:</strong> Build 200,000 state-owned homes. Cap rents at 25% of income. End land banking.</li>
@@ -92,20 +98,9 @@
   </main>
 
   <footer style="background: rgba(255, 255, 255, 0.8); padding: 1rem; text-align: center; color: #111; border-top: 2px solid #C8102E;">
-  <p><strong>Email:</strong> temanaotetangata@gmail.com</p>
-  <p><strong>Location:</strong> Tāmaki Makaurau (Auckland), Aotearoa</p>
-  <p>© 2025 Te Mana o te Tangata</p>
-</footer>
-<section id="housing-policy" style="background: rgba(255,255,255,0.1); padding: 2rem; margin-top: 2rem; border-radius: 10px;">
-  <h2 style="color: #FFD700;">Housing Policy</h2>
-  <p><strong>Background:</strong> Everyone deserves a warm, secure home. Our housing system has been shaped by colonial dispossession and market speculation...</p>
-  <ul>
-    <li>Build 200,000 state-owned papakāinga (community-based) homes</li>
-    <li>Cap rents at 25% of household income</li>
-    <li>Ban land banking and penalise empty investment properties</li>
-    <li>Return confiscated whenua to iwi and hapū</li>
-  </ul>
-</section>
-
+    <p><strong>Email:</strong> temanaotetangata@gmail.com</p>
+    <p><strong>Location:</strong> Tāmaki Makaurau (Auckland), Aotearoa</p>
+    <p>© 2025 Te Mana o te Tangata</p>
+  </footer>
 </body>
 </html>
