@@ -29,15 +29,37 @@
     main {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
-      margin: 2rem;
+      margin: 2rem auto;
       border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 15px rgba(255, 235, 153, 0.3);
     }
     h1 {
-      color: #FFFFFF;
+      color: #FFD700;
       text-align: center;
+      font-size: 2.5rem;
     }
-    ul {
-      padding-left: 1.5rem;
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .contact-card {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    .contact-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .contact-card li {
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .contact-card strong {
+      color: #FFD700;
     }
     footer {
       text-align: center;
@@ -57,20 +79,20 @@
 
   <main>
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Whether you have questions, want to volunteer, or support the kaupapa, please reach out.</p>
-    <ul>
-     <li><strong>Email:</strong> temanaotetangata@gmail.com</li>
+    <p>We’d love to hear from you! Whether you have questions, want to volunteer, or support the kaupapa — get in touch.</p>
 
-      <li><strong>Location:</strong> Aotearoa, New Zealand</li>
-    </ul>
+    <div class="contact-card">
+      <ul>
+        <li><strong>Email:</strong> temanaotetangata@gmail.com</li>
+        <li><strong>Location:</strong> Aotearoa, New Zealand</li>
+      </ul>
+    </div>
   </main>
 
- <footer style="background: rgba(255, 255, 255, 0.8); padding: 1rem; text-align: center; color: #111; border-top: 2px solid #C8102E;">
-  <p><strong>Email:</strong> temanaotetangata@gmail.com</p>
-  <p><strong>Location:</strong> Tāmaki Makaurau (Auckland), Aotearoa</p>
-  <p>© 2025 Te Mana o te Tangata</p>
-</footer>
-
-
+  <footer style="background: rgba(255, 255, 255, 0.8); padding: 1rem; text-align: center; color: #111; border-top: 2px solid #C8102E;">
+    <p><strong>Email:</strong> temanaotetangata@gmail.com</p>
+    <p><strong>Location:</strong> Tāmaki Makaurau (Auckland), Aotearoa</p>
+    <p>© 2025 Te Mana o te Tangata</p>
+  </footer>
 </body>
 </html>
