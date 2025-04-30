@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Roadmap | Te Mana o te Tangata</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      font-family: 'Ubuntu', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      overflow-x: hidden;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+    .phase {
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+    .phase.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .phase h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff3131;
+    }
+    .phase p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .cta {
+      margin-top: 1.5rem;
+      background-color: #ff3131;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1603145733145-7a141e5b0b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      z-index: -1;
+      filter: brightness(0.2);
+    }
+    .roadmap-header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <section>
+    <div class="roadmap-header">The Road to Te Mana o te Tangata</div>
+  </section>
+
+  <section class="phase" id="phase1">
+    <h2>Phase 1: Foundations (0–3 months)</h2>
+    <p>Build the core, define kaupapa, launch platforms, and publish the full manifesto.</p>
+    <p>🔧 Establish rōpū | 🌐 Launch online presence | 🧭 Define values</p>
+    <a href="/manifesto" class="cta">Read the Manifesto</a>
+  </section>
+
+  <section class="phase" id="phase2">
+    <h2>Phase 2: Public Launch (3–6 months)</h2>
+    <p>Go public with campaigns, community wānanga, and petitions.</p>
+    <p>📢 Launch video | ✍️ Petitions | 🗳️ Spread the word</p>
+    <a href="/campaigns" class="cta">Join a Campaign</a>
+  </section>
+
+  <section class="phase" id="phase3">
+    <h2>Phase 3: Pilot Projects (6–12 months)</h2>
+    <p>Local pods form, trial timebanks, kai co-ops, and renter hubs.</p>
+    <p>🌱 Community kai | ⏳ Timebanks | 🏠 Housing support</p>
+    <a href="/pods" class="cta">Start a Pod</a>
+  </section>
+
+  <section class="phase" id="phase4">
+    <h2>Phase 4: Mobilisation (1–2 years)</h2>
+    <p>Train leaders, engage with MPs, and influence political platforms.</p>
+    <p>🗣️ Policy talks | 🧑‍🎓 Youth Council | 🏛️ Grassroots power</p>
+    <a href="/get-involved" class="cta">Come to a Hui</a>
+  </section>
+
+  <section class="phase" id="phase5">
+    <h2>Phase 5: Institutional Change (2–5 years)</h2>
+    <p>Constitutional reform, prison abolition, and personhood for nature.</p>
+    <p>📜 New Constitution | 🌊 River rights | 🧱 End prison system</p>
+    <a href="/vision" class="cta">Be the Change</a>
+  </section>
+
+  <script>
+    const phases = document.querySelectorAll('.phase');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      phases.forEach(phase => {
+        const top = phase.getBoundingClientRect().top;
+        if (top < windowHeight - 100) {
+          phase.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
