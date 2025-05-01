@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Roadmap | Te Mana o te Tangata</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How We Get There | Te Mana o te Tangata</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -13,112 +13,139 @@
     }
     html, body {
       font-family: 'Ubuntu', sans-serif;
-      background: #0f0f0f;
+      background-color: #0a0a0a;
       color: white;
-      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 2rem;
+    .timeline {
       position: relative;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+      max-width: 900px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, #ff3131, #222);
     }
     .phase {
-      max-width: 800px;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #ff3131;
+      border-radius: 10px;
       text-align: center;
-      margin-bottom: 2rem;
       opacity: 0;
       transform: translateY(50px);
-      transition: all 1s ease-out;
+      transition: all 0.8s ease-out;
     }
     .phase.visible {
       opacity: 1;
       transform: translateY(0);
     }
     .phase h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
-      color: #ff3131;
+      color: #6fff6f;
     }
     .phase p {
       font-size: 1.1rem;
       margin-bottom: 1rem;
     }
-    .cta {
-      margin-top: 1.5rem;
-      background-color: #ff3131;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1603145733145-7a141e5b0b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-      z-index: -1;
-      filter: brightness(0.2);
-    }
-    .roadmap-header {
+    .icon {
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
       font-weight: bold;
-      margin-bottom: 2rem;
+      background: #ff3131;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #6fff6f;
+      color: black;
+    }
+    header {
       text-align: center;
-      color: #fff;
+      padding: 4rem 2rem 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff3131;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
-  <section>
-    <div class="roadmap-header">The Road to Te Mana o te Tangata</div>
-  </section>
+  <header>
+    <h1>The Road to Te Mana o te Tangata</h1>
+    <p>Our journey toward justice, sovereignty, and collective wellbeing begins here. Scroll through our roadmap to see how we build the future together — one phase at a time.</p>
+  </header>
 
-  <section class="phase" id="phase1">
-    <h2>Phase 1: Foundations (0–3 months)</h2>
-    <p>Build the core, define kaupapa, launch platforms, and publish the full manifesto.</p>
-    <p>🔧 Establish rōpū | 🌐 Launch online presence | 🧭 Define values</p>
-    <a href="/manifesto" class="cta">Read the Manifesto</a>
-  </section>
+  <div class="timeline">
+    <div class="phase" id="phase1">
+      <div class="icon">🧱</div>
+      <h2>Phase 1: Foundations (0–3 months)</h2>
+      <p>Build the core, define kaupapa, launch platforms, and publish the full manifesto.</p>
+      <p>🔧 Establish rōpū | 🌐 Launch online presence | 🧭 Define values</p>
+      <a href="policies.html" class="cta-button">Read the Manifesto</a>
+    </div>
 
-  <section class="phase" id="phase2">
-    <h2>Phase 2: Public Launch (3–6 months)</h2>
-    <p>Go public with campaigns, community wānanga, and petitions.</p>
-    <p>📢 Launch video | ✍️ Petitions | 🗳️ Spread the word</p>
-    <a href="/campaigns" class="cta">Join a Campaign</a>
-  </section>
+    <div class="phase" id="phase2">
+      <div class="icon">📣</div>
+      <h2>Phase 2: Public Launch (3–6 months)</h2>
+      <p>Go public with campaigns, community wānanga, and petitions.</p>
+      <p>🎥 Launch video | ✍️ Petitions | 🗳️ Spread the word</p>
+      <a href="campaigns.html" class="cta-button">Join a Campaign</a>
+    </div>
 
-  <section class="phase" id="phase3">
-    <h2>Phase 3: Pilot Projects (6–12 months)</h2>
-    <p>Local pods form, trial timebanks, kai co-ops, and renter hubs.</p>
-    <p>🌱 Community kai | ⏳ Timebanks | 🏠 Housing support</p>
-    <a href="/pods" class="cta">Start a Pod</a>
-  </section>
+    <div class="phase" id="phase3">
+      <div class="icon">🌱</div>
+      <h2>Phase 3: Pilot Projects (6–12 months)</h2>
+      <p>Local pods form, trial timebanks, kai co-ops, and renter hubs.</p>
+      <p>🥬 Community kai | ⏳ Timebanks | 🏠 Housing support</p>
+      <a href="pods.html" class="cta-button">Start a Pod</a>
+    </div>
 
-  <section class="phase" id="phase4">
-    <h2>Phase 4: Mobilisation (1–2 years)</h2>
-    <p>Train leaders, engage with MPs, and influence political platforms.</p>
-    <p>🗣️ Policy talks | 🧑‍🎓 Youth Council | 🏛️ Grassroots power</p>
-    <a href="/get-involved" class="cta">Come to a Hui</a>
-  </section>
+    <div class="phase" id="phase4">
+      <div class="icon">🧭</div>
+      <h2>Phase 4: Mobilisation (1–2 years)</h2>
+      <p>Train leaders, engage with MPs, and influence political platforms.</p>
+      <p>🗣️ Policy talks | 🧑‍🎓 Youth Council | 🏛️ Grassroots power</p>
+      <a href="contact.html" class="cta-button">Come to a Hui</a>
+    </div>
 
-  <section class="phase" id="phase5">
-    <h2>Phase 5: Institutional Change (2–5 years)</h2>
-    <p>Constitutional reform, prison abolition, and personhood for nature.</p>
-    <p>📜 New Constitution | 🌊 River rights | 🧱 End prison system</p>
-    <a href="/vision" class="cta">Be the Change</a>
-  </section>
+    <div class="phase" id="phase5">
+      <div class="icon">🏛️</div>
+      <h2>Phase 5: Institutional Change (2–5 years)</h2>
+      <p>Constitutional reform, prison abolition, and personhood for nature.</p>
+      <p>📜 New Constitution | 🌊 River rights | 🧱 End prison system</p>
+      <a href="subscribe.html" class="cta-button">Be the Change</a>
+    </div>
+  </div>
 
   <script>
     const phases = document.querySelectorAll('.phase');
-
     function revealOnScroll() {
       const windowHeight = window.innerHeight;
       phases.forEach(phase => {
@@ -128,15 +155,8 @@
         }
       });
     }
-
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
   </script>
-  <div class="cta-buttons" style="text-align:center; margin-top: 4rem;">
-  <a href="policies.html" class="cta-button">Our Policies</a>
-  <a href="campaigns.html" class="cta-button">View Campaigns</a>
-  <a href="subscribe.html" class="cta-button">Subscribe</a>
-</div>
-
 </body>
 </html>
