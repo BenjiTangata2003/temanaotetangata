@@ -3,90 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Download the Toolkit | Te Mana o te Tangata</title>
+  <title>Advocacy Toolkit | Te Mana o te Tangata</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Ubuntu', sans-serif;
-      background: url('https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center center no-repeat fixed;
+      background: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
       background-size: cover;
+      color: white;
       margin: 0;
       padding: 0;
-      color: white;
       line-height: 1.6;
     }
-
     header {
-      background-color: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.6);
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 3rem 1rem;
     }
-
     header h1 {
       font-size: 2.5rem;
-      color: #ff3131;
+      margin-bottom: 1rem;
     }
-
     header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
+      font-size: 1.2rem;
     }
-
     main {
       background-color: rgba(0, 0, 0, 0.75);
       padding: 2rem;
-      margin: 2rem auto;
-      max-width: 900px;
+      margin: 2rem;
       border-radius: 10px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
+    section {
+      margin-bottom: 3rem;
+    }
     h2 {
       color: #6fff6f;
-      margin-top: 2rem;
     }
-
-    .downloads {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .download-box {
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid #6fff6f;
-      border-radius: 10px;
+    .toolkit-item {
+      background: rgba(255, 255, 255, 0.1);
       padding: 1rem;
-      width: 250px;
-      text-align: center;
+      border-left: 4px solid #6fff6f;
+      border-radius: 5px;
+      margin-bottom: 2rem;
     }
-
-    .download-box h3 {
-      margin-bottom: 0.5rem;
-      color: #ffffff;
+    .toolkit-item h3 {
+      margin-top: 0;
+      color: #ff3131;
     }
-
     .button {
       display: inline-block;
       background-color: #ff3131;
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem 0;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-      margin-top: 0.5rem;
       transition: all 0.3s ease;
     }
-
     .button:hover {
       background-color: #6fff6f;
       color: black;
       box-shadow: 0 0 12px #6fff6f;
       transform: translateY(-2px);
     }
-
     footer {
       text-align: center;
       padding: 1rem;
@@ -97,42 +80,33 @@
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Movement Toolkit</h1>
-    <p>Download posters, graphics, and resources to help spread the kaupapa of Te Mana o te Tangata. Use them at stalls, in schools, online — wherever the people are.</p>
+    <h1>Advocacy Toolkit</h1>
+    <p>Download and share these visual resources to help spread the kaupapa of Te Mana o te Tangata.</p>
   </header>
 
   <main>
-    <h2>Available Downloads</h2>
-    <div class="downloads">
+    <section class="toolkit-item">
+      <h3>Remove GST from Food – Infographic</h3>
+      <p>Use this image to educate others about the campaign to end GST on essentials.</p>
+      <a class="button" href="https://raw.githubusercontent.com/benjitangata2003/temanaotetangata/main/toolkit/gst-poster.png" download>Download PNG</a>
+    </section>
 
-      <div class="download-box">
-        <h3>📜 Policy Infographic</h3>
-        <a class="button" href="https://your-link.com/policy-poster.png" download>Download PNG</a>
-      </div>
+    <section class="toolkit-item">
+      <h3>Cap Rents at 25% – Shareable Poster</h3>
+      <p>Help others understand why housing justice begins with rent fairness.</p>
+      <a class="button" href="https://raw.githubusercontent.com/benjitangata2003/temanaotetangata/main/toolkit/rent-cap-poster.png" download>Download PNG</a>
+    </section>
 
-      <div class="download-box">
-        <h3>📣 Campaign Posters</h3>
-        <a class="button" href="https://your-link.com/campaign-posters.zip" download>Download ZIP</a>
-      </div>
-
-      <div class="download-box">
-        <h3>🛠️ Pod Starter Kit</h3>
-        <a class="button" href="https://your-link.com/pod-kit.pdf" download>Download PDF</a>
-      </div>
-
-      <div class="download-box">
-        <h3>🎨 Social Media Graphics</h3>
-        <a class="button" href="https://your-link.com/social-graphics.zip" download>Download ZIP</a>
-      </div>
-
-    </div>
+    <section class="toolkit-item">
+      <h3>Free & Green Transport – Campaign Visual</h3>
+      <p>Spread the word about free, sustainable public transport with this bold graphic.</p>
+      <a class="button" href="https://raw.githubusercontent.com/benjitangata2003/temanaotetangata/main/toolkit/free-transport-poster.png" download>Download PNG</a>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Te Mana o te Tangata | Email: temanaotetangata@gmail.com</p>
   </footer>
-
 </body>
 </html>
